@@ -5,6 +5,8 @@
     <title>Home</title>
 </head>
 <body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<div class="container text-center">
 <h1 style="text-align:center;"><u>Password Generator</u></h1>
 <a href="{% url 'about' %}">ABOUT</a>
     <form action="{% url 'password' %}" align="center">
@@ -28,8 +30,8 @@
 
         <input type="checkbox" name="special">  Special Characters
         <br><br><br>
-        <input type="submit", name="genpass", value="Generate Password">
+        <input type="submit", name="genpass", value="Generate Password", class="btn btn-info">
     </form>
-
+</div>
 </body>
 </html>
