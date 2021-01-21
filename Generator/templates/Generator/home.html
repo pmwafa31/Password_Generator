@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1 style="text-align:center;"><u>Password Generator</u></h1>
+<a href="{% url 'about' %}">ABOUT</a>
+    <form action="{% url 'password' %}" align="center">
+        <label>Choose your requirements from below options</label>
+        <br><br>
+        <label>Length</label>
+        <select name="length">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10", selected="selected">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+
+        <br><br>
+        <input type="checkbox" name="uppercase">  Uppercase
+
+        <input type="checkbox" name="numbers">  Numbers
+
+        <input type="checkbox" name="special">  Special Characters
+        <br><br><br>
+        <input type="submit", name="genpass", value="Generate Password">
+    </form>
+
+</body>
+</html>
